@@ -2,7 +2,6 @@
   display: flex;
   cursor: pointer; 
   align-items: center;
-  border-bottom: 1px solid var(--side-bar-border);
   height:70px;
 }
 .chatListItem.active{
@@ -27,6 +26,7 @@
   padding-right: 15px;
   margin-left: 10px;
   height: 100%;
+  border-bottom: 1px solid var(--side-bar-border);
 
   flex-wrap: wrap;
   min-width: 0;
@@ -40,7 +40,7 @@
 .chatListItem--name{
   font-size: 17px;
   font-weight: 400;
-  color: var(--  --color-chat-item-message);
+  color: var(--color-chat-item-message);
 }
 .chatListItem--date{
   font-size: 12px;

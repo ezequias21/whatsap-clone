@@ -1,0 +1,101 @@
+.message--line {
+  display: flex;
+}
+.message--last {
+  margin-bottom: 10px;
+}
+.message--item {
+  position: relative;
+  background-color: var(--message);
+  border-radius: 7.5px;
+  box-shadow: 0 1px 1px #ccc;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  margin-bottom: 2px;
+}
+.message--reply--container:hover {
+  /*   transform: rotate(40deg);
+  -webkit-box-shadow: inset -39px 31px 11px -26px rgba(0, 0, 0, 0.2);
+  box-shadow: inset -39px 31px 11px -26px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all ease 0.2s; */
+}
+.somber {
+    position: absolute;
+    top: -10px;
+    width: 110px;
+    right: -16px;
+    height: 0;
+    box-shadow: 0px 3px 14px 22px rgba(77,77,77,0.2);
+    z-index: -1;
+    transform: rotate(14deg);
+}
+.message--reply--container {
+  position: relative;
+  background-color: var(--message-deeper);
+  border-radius: 7.5px;
+  overflow: hidden;
+  z-index: 10;
+}
+.message--reply {
+  border-left: 4px solid #00a884;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  margin-bottom: 2px;
+  color: var(--cor-date);
+}
+.message--img {
+  z-index: 10;
+}
+.message--img img {
+  max-width: 299px;
+  border-radius: 7.5px;
+}
+.message--my {
+  background-color: var(--my-message);
+}
+.message--baloon-left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -9px;
+  border-width: 11px;
+  border-style: solid;
+  border-color: var(--my-message) transparent transparent var(--my-message);
+}
+
+.message--baloon-right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -9px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: var(--message) var(--message) transparent transparent;
+}
+
+.message-user {
+  font-size: 14px;
+  margin: 2px 0 0 8px;
+  font-weight: 600;
+  color: #00a884;
+}
+.message--text {
+  font-size: 14px;
+  margin: 4px 40px 5px 5px;
+}
+.message--date {
+  font-size: 11px;
+  color: var(--cor-date);
+  margin-right: 5px;
+  text-align: right;
+  height: 15px;
+  margin-top: -15px;
+}
+.message--img-date {
+  color: #fff;
+  z-index: 10;
+  margin-top: -19px;
+}

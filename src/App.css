@@ -20,6 +20,11 @@
   --color-name-download: #2a896d;
   --border-header: #d2d8dc;
   --color-picker-border: #008069;
+  --message: #fff;
+  --message-deeper: #d1f4cc;
+  --my-message: #d9fdd3;
+  --my-message-deeper: #f5f6f6;
+  --shadow: #0b141a;
 }
 
 body {

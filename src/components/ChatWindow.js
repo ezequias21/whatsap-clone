@@ -1,4 +1,5 @@
 import "./ChatWindow.css";
+import Message from  './Message'
 import SearchIcon from "@material-ui/icons/Search";
 import AttachFileIcon from "@material-ui/icons/AttachFile";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
@@ -16,6 +17,11 @@ export default function ChatWindow({ chat, toDisplayMoreInfo }) {
   const [emojiOpen, setEmojiOpen] = useState(false);
   const [text, setText] = useState("");
   const [caretPosition, setCaretPosition] = useState(0);
+  const [messages, setMessages] = useState([
+    {message: "Tudo bem?", date: "12/09/1998"}, 
+   /*  {message: "Tudo bem?", date: "12/09/1998"},
+    {message: "Tudo bem?", date: "12/09/1998"} */
+  ])
 
   const handleEmojiClick = (e, emojiObject) => {
     let array_text = text.split("");
@@ -51,7 +57,16 @@ export default function ChatWindow({ chat, toDisplayMoreInfo }) {
         </div>
       </div>
 
-      <div className="chatWindow--body"></div>
+      <div className="chatWindow--body">
+
+              {messages.map((message, key)=>(
+                <Message 
+                  key={key}
+                  message={message}
+                />
+              ))}
+
+      </div>
 
       <div
         className="chatWindow-emojiArea"

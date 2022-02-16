@@ -1,6 +1,11 @@
 .message--line {
   display: flex;
 }
+
+.my.message--line {
+  justify-content: flex-end;
+}
+
 .message--last {
   margin-bottom: 10px;
 }
@@ -13,6 +18,11 @@
   flex-direction: column;
   padding: 3px;
   margin-bottom: 2px;
+  max-width: 60%;
+  justify-self: end;
+}
+.my .message--item {
+  background-color: var(--my-message);
 }
 .message--reply--container:hover {
   /*   transform: rotate(40deg);
@@ -33,11 +43,18 @@
 }
 .message--reply--container {
   position: relative;
-  background-color: var(--message-deeper);
+  background-color: var(--my-message-deeper);
   border-radius: 7.5px;
   overflow: hidden;
   z-index: 10;
 }
+.my .message--reply--container{
+  background-color: var(--message-deeper);
+}
+/* .message--reply--container-my{
+  background-color: var(--my-message-deeper);
+} */
+
 .message--reply {
   border-left: 4px solid #00a884;
   display: flex;
@@ -53,10 +70,10 @@
   max-width: 299px;
   border-radius: 7.5px;
 }
-.message--my {
+/* .message--my {
   background-color: var(--my-message);
-}
-.message--baloon-left::after {
+} */
+.message--baloon-right::after {
   content: "";
   position: absolute;
   top: 0;
@@ -66,7 +83,7 @@
   border-color: var(--my-message) transparent transparent var(--my-message);
 }
 
-.message--baloon-right::after {
+.message--baloon-left::after {
   content: "";
   position: absolute;
   top: 0;
@@ -85,6 +102,7 @@
 .message--text {
   font-size: 14px;
   margin: 4px 40px 5px 5px;
+  word-break: break-word
 }
 .message--date {
   font-size: 11px;
@@ -98,4 +116,24 @@
   color: #fff;
   z-index: 10;
   margin-top: -19px;
+}
+
+.messsage--reply-info {
+  display: flex;
+  font-size: 14px;
+  margin: 5px;
+  margin-right: 50px;
+}
+.messsage--reply-info span{
+  padding-left: 5px;
+}
+.miscellaneous{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.messsage--reply--img {
+  width: 70px;
+  height: 60px;
+  object-fit: cover;
 }

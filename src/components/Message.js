@@ -8,55 +8,13 @@ export default function Message(key, message) {
   return (
     <>
 
-      <MessageSimpleReply
-        text={"Olá, tudo bem?"}
-        reply={"sdfdsfsdsdfsdfsdfsdfdsfdfdf"}
-        sendDate={"19:00"}
-        userName={"Você"}
-        srcImage={
-          "https://i.pinimg.com/originals/0b/7b/9b/0b7b9b4d0f2e4877f6cc5f105212a8ca.jpg"
-        }
-        isMy={true}
-      />
+    
 
-      <MessageSimpleReply
-        text={"Olá, tudo bem?"}
-        reply={"sdfdsfsdsdfsdfsdfsdfdsfdfdf"}
-        sendDate={"19:00"}
-        userName={"Você"}
-        srcImage={
-          "https://i.pinimg.com/originals/0b/7b/9b/0b7b9b4d0f2e4877f6cc5f105212a8ca.jpg"
-        }
-        isMy={false}
-      />
-
-      <MessageImageReply
-        text={"Olá, tudo bem?"}
-        sendDate={"19:00"}
-        userName={"Você"}
-        srcImage={
-          "https://i.pinimg.com/originals/0b/7b/9b/0b7b9b4d0f2e4877f6cc5f105212a8ca.jpg"
-        }
-        isMy={true}
-      />
-
-      <MessageImageReply
-        text={
-          "sasssssssssssssssssssssssssssssssssssssssssssssssssssssssasdsdsddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
-        }
-        sendDate={"19:00"}
-        userName={"Josiel Lacerda"}
-        srcImage={
-          "https://i.pinimg.com/originals/0b/7b/9b/0b7b9b4d0f2e4877f6cc5f105212a8ca.jpg"
-        }
-        isMy={false}
-      />
-
-      <MessageImage
+     {/*  <MessageImage
         sendDate={"12:25"}
         userName={"Bosta bosta"}
         srcImage={
-          "https://img.quizur.com/f/img5d5ab1fc8ec303.06352000.jpg?lastEdited=1566224898"
+          "https://ciclovivo.com.br/wp-content/uploads/2018/10/iStock-536613027.jpg"
         }
         baloon={true}
         isMy={true}
@@ -65,24 +23,63 @@ export default function Message(key, message) {
         sendDate={"12:25"}
         userName={"Bosta bosta"}
         srcImage={
-          "https://i.pinimg.com/originals/0b/7b/9b/0b7b9b4d0f2e4877f6cc5f105212a8ca.jpg"
+          "https://i0.wp.com/multarte.com.br/wp-content/uploads/2015/08/imagens-amor.jpg?fit=1680%2C1050&ssl=1"
         }
         isMy={false}
       />
       <MessageSimple
-        userName={"Bosta bosta"}
-        text={"Seu boiola"}
+        text={"Olhe essas imagens!"}
         sendDate={"12:25"}
         isMy={true}
       />
       <MessageSimple
-        text={"Seu boiola"}
+        userName={"Amigo"}
+        text={"São incríveis!"}
         sendDate={"12:25"}
         isMy={false}
+      /> */}
+
+<MessageSimpleReply
+        text={"Olá, tudo bem?"}
+        reply={"Estou sim"}
+        sendDate={"19:00"}
+        userName={"Você"}
+        srcImage={
+          "https://i0.wp.com/multarte.com.br/wp-content/uploads/2015/08/imagens-amor.jpg?fit=1680%2C1050&ssl=1"
+        }
+        isMy={true}
       />
-      <MessageSimple
-        text={"Seu boiola"}
-        sendDate={"12:25"}
+
+      <MessageSimpleReply
+        text={"Olá, tudo bem?"}
+        reply={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
+        sendDate={"19:00"}
+        userName={"Você"}
+        srcImage={
+          "https://i0.wp.com/multarte.com.br/wp-content/uploads/2015/08/imagens-amor.jpg?fit=1680%2C1050&ssl=1"
+        }
+        isMy={false}
+      />
+
+      <MessageImageReply
+        text={"Olá, tudo bem?"}
+        sendDate={"19:00"}
+        userName={"Você"}
+        srcImage={
+          "https://i0.wp.com/multarte.com.br/wp-content/uploads/2015/08/imagens-amor.jpg?fit=1680%2C1050&ssl=1"
+        }
+        isMy={true}
+      />
+
+      <MessageImageReply
+        text={
+          "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
+        sendDate={"19:00"}
+        userName={"Almeida"}
+        srcImage={
+          "https://ciclovivo.com.br/wp-content/uploads/2018/10/iStock-536613027.jpg"
+        }
         isMy={false}
       />
     </>

@@ -34,4 +34,3 @@ $ npm start
  ## Tecnologias
  
  - [React](https://pt-br.reactjs.org/)
- - [Sass](https://sass-lang.com)
